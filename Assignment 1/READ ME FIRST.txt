@@ -1,0 +1,11 @@
+Before working on the project, please follow these steps:
+
+1. Pull the latest version from the repository to ensure you have the most up-to-date code.
+2. Notify the group that you will be working on the project to avoid conflicts.
+3. Ensure that no one else is currently working on the project to avoid overlapping changes.
+4. Perform a pull to update your local copy, and resolve any merge conflicts if necessary.
+5. After making your changes, please notify the group that updates have been made and push your changes to the repository.
+
+This process will help maintain a smooth and collaborative workflow for the project.
+
+"Empowered Girls, Shaping the World!"
