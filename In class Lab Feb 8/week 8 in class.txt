@@ -1,0 +1,11 @@
+Assignment Content
+
+With your group, write a short (300 word) report on how you might go about streamlining Victoria's sales and cash flow in her business, either online or in-person. Accompany your report with a class diagram which will reflect the data in your report. You do not need to submit the controller classes for this one.
+
+
+
+Your group should submit ONE PDF and ONE .vpp file. 
+
+
+
+This activity is open ended on purpose; I want you to brainstorm and be creative with your group.
