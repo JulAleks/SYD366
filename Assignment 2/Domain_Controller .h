@@ -1,7 +1,7 @@
 /*
 Schedule Module
 Group 2 - NEE
-2023-11-09
+2023-11-11
 Julia Alekseev 051292134
 Audrey Duzon 019153147
 Minji Kim 112030226
@@ -18,22 +18,22 @@ Hyeri Jang 115328221
 class DomainController{
     // Notice how there are no member variables!
 public:
-    void setDueDate(date dueDate); 
+    void setDueDate(time_t dueDate); 
     void setPickUpTime(time_t pickUpTime);
     void setOrderInfo(std::string instruction, int quantity);
     void setTotal(double totalPrice);
     
-    ArrayList<Customers> retrieveCustomers();
-    ArrayList<BakedGoods> retrieveBakedGoods();
+    Customer* retrieveCustomers();
+    BakedGood* retrieveBakedGoods();
    
-    OrderDetails & getOrderDetail();
-    OrderDetails & createOrderDetail();
-    Customer&retrieveCustomer(int customerID);
-    Order &getOrder();
-    BakedGoods& getBakedGoods();
+    OrderDetail getOrderDetail();
+    OrderDetail createOrderDetail();
+    Customer retrieveCustomer(int customerID);
+    Order getOrder();
+    BakedGood* getBakedGoods();
 
-    bool save(Order& o);
-    bool saveOrderDetail(Order& od);
+    void save(Order& o);
+    bool saveOrderDetail(OrderDetail& od);
 };
 
 

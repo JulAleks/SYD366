@@ -1,7 +1,7 @@
 /*
 Schedule Module
 Group 2 - NEE
-2023-11-09
+2023-11-11
 Julia Alekseev 051292134
 Audrey Duzon 019153147
 Minji Kim 112030226
@@ -13,26 +13,27 @@ Hyeri Jang 115328221
 #define ENTITY_MANAGER_H_
 
 #include <iostream>
+#include <string>
 #include "CreateCustomerOrder.h"
 
 class EntityManager{
     // Notice how there are no member variables!
 public:
-    Customers& getCustomers(); 
-    Orders& getOrder(date dueDate);   
-    BakedGoods & getBakedGoods();
-    std::string getSpecialInstructions();
+    Customer* getCustomers(); 
+    Order* getOrders(time_t dueDate);   
+    BakedGood* getBakedGoods();
+    std::string getSpecialInstruction();
 
-    ArrayList<BakedGoods> createBakedGoodsList();
-    ArrayList<BakedGoods> getIBakedGoodsList(BakedGoods& bg);
+    BakedGood* createBakedGoods();
+    BakedGood* getBakedGoods(BakedGood* bg);
 
-    ArrayList<Orders> createOrderList();
-    ArrayList<Orders> getOrderList(Orders& o);
+    Order* createOrders();
+    Order* getOrders(Order* o);
 
-    ArrayList<Customer> createCustomerList();
-    ArrayList<Customer> getCustomerList();
+    Customer* createCustomers();
+    Customer* getCustomers();
 
-    bool persist(Order& o);
+    void persist(Order& o);
 };
 
 #endif

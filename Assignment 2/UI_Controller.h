@@ -1,7 +1,7 @@
 /*
 Schedule Module
 Group 2 - NEE
-2023-11-09
+2023-11-11
 Julia Alekseev 051292134
 Audrey Duzon 019153147
 Minji Kim 112030226
@@ -22,17 +22,17 @@ class UIController{
 public:
     void requestNewOrder();
     void requestCustomers();
-    void enterDueDate(date dueDate);
-    void enterPickUpTime(time pickUpTime);
+    void enterDueDate(time_t dueDate);
+    void enterPickUpTime(time_t pickUpTime);
     void enterOrderInfo(std::string ininstruction, int quantity);
 
-    Customer & selectCustomer(int customerID);
-    BakedGoods& selectBakedGood(int goodID);
+    Customer selectCustomer(int customerID);
+    BakedGood selectBakedGood(int goodID);
 
-    ArrayList<BakedGoods> requestBakedGoods();
+    BakedGood* requestBakedGoods();
    
-    bool confirmOrderDetail(OrderDetails& od);
-    bool confirm(Order& o);
+    bool confirmOrderDetail(OrderDetail od);
+    void confirm(Order o);
 };
 
 #endif
